@@ -18,7 +18,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hi there! Let\'s explore some US bikeshare data!')
 
 
 
@@ -48,7 +48,7 @@ def get_filters():
     # get user input for day of week (all, monday, tuesday, ... sunday)
     days = ('all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')
     while True:
-#        day = input('\nWhich day would you like to filter by: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday? Alternatively, enter "all" to apply no day filter.\n').lower()
+#        day = input('\nPlease choose a specific day to filter by: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday? Alternatively, enter "all" to apply no day filter.\n').lower()
         day = input('Which day would you like to filter by: ' + '\033[1m'+ 'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday?' + '\033[0m'+' Alternatively, enter' + '\033[1m ' + "all" + ' \033[0m' +'to apply no month filter.\n').lower()
         if day in days:
             print('\nYour choice is: \033[1;32;40m{}\033[1;38;0m\n'.format(day.title()))  #This code '\033[1;32;40m {}.\n' formats the user's choice green
@@ -227,10 +227,6 @@ def display_data(df):
                     more_data = input('\nWould you like to see 5 more rows of data? Type "yes" or "no":\n').lower()
                     continue
             break
-
-
-
-
 
 def main():
     while True:
