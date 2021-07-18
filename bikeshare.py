@@ -22,7 +22,7 @@ def get_filters():
 
 
 
-    # get user input for city (chicago, new york city, washington).
+    # get user input for specific city (chicago, new york city, washington).
     cities = ('Chicago', 'New York City', 'Washington')
     while True:
         city = input('\nWould you like to see data for: ' + '\033[1mChicago, New York City, or Washington?\033[0m\n').title()
