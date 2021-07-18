@@ -228,10 +228,6 @@ def display_data(df):
                     continue
             break
 
-
-
-
-
 def main():
     while True:
         city, month, day = get_filters()
